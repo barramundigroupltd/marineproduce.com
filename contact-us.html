@@ -191,61 +191,52 @@
 	<section class="contact-form">
 	    <div class="content outer container">
 			<div class="row">
-
 				<div class="col-sm-8">
 					<h2 class="sub-title">Get in Touch</h2>
 
-
-
-
-	<form name="contact-us" method="POST" class="container validate-form contact-form" data-netlify="true">
-
-
-		<div class="row form-errors">
-
-		</div>
-
-
-		<div class="row input-wrap">
-			<div class="col-sm-6" aria-live="assertive">
-				<div class="form-row contact_first_name-row" ><label for="contact_first_name" class="required">First Name <sup class="req-label">*</sup></label><input type="text" id="contact_first_name" name="contact[first_name]" required="required" title="Your first name" data-validation="required" data-validation-error-msg="Please tell us your first name" /></div>
-			</div>
-
-			<div class="col-sm-6" aria-live="assertive">
-				<div class="form-row contact_last_name-row" ><label for="contact_last_name" class="required">Last Name <sup class="req-label">*</sup></label><input type="text" id="contact_last_name" name="contact[last_name]" required="required" title="Your last name" data-validation="required" data-validation-error-msg="Please tell us your last name" /></div>
-			</div>
-		</div>
-
-		<div class="row input-wrap">
-			<div class="col-sm-6" aria-live="assertive">
-				<div class="form-row contact_contact_number-row" ><label for="contact_contact_number" class="required">Phone Number <sup class="req-label">*</sup></label><input type="text" id="contact_contact_number" name="contact[contact_number]" required="required" title="Phone Number" data-validation="required" data-validation-error-msg="Please enter a valid phone number" /></div>
-			</div>
-
-			<div class="col-sm-6" aria-live="assertive">
-				<div class="form-row contact_email_address-row" ><label for="contact_email_address" class="required">Email Address <sup class="req-label">*</sup></label><input type="email" id="contact_email_address" name="contact[email_address]" required="required" title="Email Address" data-validation="email" data-validation-error-msg="Please enter a valid email address" /></div>
-			</div>
-		</div>
-
-		<div class="row input-wrap textarea" aria-live="assertive">
-			<div class="form-row contact_enquiry-row" ><label for="contact_enquiry">Your Enquiry</label><textarea id="contact_enquiry" name="contact[enquiry]" title="Your Enquiry"></textarea></div>
-		</div>
-
-		<div class="row privacy-wrap">
-			<div class="form-row contact_privacy-row" ><label for="contact_privacy">I do not wish to receive future marketing materials from Marine Produce Australia.</label><input type="checkbox" id="contact_privacy" name="contact[privacy]" value="1" /></div>
-		</div>
-
-		<div class="row">
-			<div><button type="submit" id="contact_submit" name="contact[submit]" class="btn transition">Submit</button></div>
-		</div>
-
-		<div class="row name_h">
-			<div class="form-row contact_name_h-row" ><label for="contact_name_h">Name h</label><input type="text" id="contact_name_h" name="contact[name_h]" class="hp" title="Leave this blank" /></div>
-		</div>
-
-		<input type="hidden" id="contact__token" name="contact[_token]" value="4eb5fc69134bf7d48f16af5bbc03ce257f052c3a" />
-
-	</form>
-
+					<form class="container validate-form contact-form" data-netlify="true" id="contact-us" method="post" name="contact-us">
+						<div class="row form-errors"></div>
+						<div class="row input-wrap">
+							<div aria-live="assertive" class="col-sm-6">
+								<div class="form-row contact_first_name-row">
+									<label class="required" for="contact_first_name">First Name <sup class="req-label">*</sup></label><input data-validation="required" data-validation-error-msg="Please tell us your first name" id="contact_first_name" name="first_name" required="required" title="Your first name" type="text">
+								</div>
+							</div>
+							<div aria-live="assertive" class="col-sm-6">
+								<div class="form-row contact_last_name-row">
+									<label class="required" for="contact_last_name">Last Name <sup class="req-label">*</sup></label><input data-validation="required" data-validation-error-msg="Please tell us your last name" id="contact_last_name" name="last_name" required="required" title="Your last name" type="text">
+								</div>
+							</div>
+						</div>
+						<div class="row input-wrap">
+							<div aria-live="assertive" class="col-sm-6">
+								<div class="form-row contact_contact_number-row">
+									<label class="required" for="contact_contact_number">Phone Number <sup class="req-label">*</sup></label><input data-validation="required" data-validation-error-msg="Please enter a valid phone number" id="contact_contact_number" name="contact_number" required="required" title="Phone Number" type="text">
+								</div>
+							</div>
+							<div aria-live="assertive" class="col-sm-6">
+								<div class="form-row contact_email_address-row">
+									<label class="required" for="contact_email_address">Email Address <sup class="req-label">*</sup></label><input data-validation="email" data-validation-error-msg="Please enter a valid email address" id="contact_email_address" name="email_address" required="required" title="Email Address" type="email">
+								</div>
+							</div>
+						</div>
+						<div aria-live="assertive" class="row input-wrap textarea">
+							<div class="form-row contact_enquiry-row">
+								<label for="contact_enquiry">Your Enquiry</label>
+								<textarea id="contact_enquiry" name="enquiry" title="Your Enquiry"></textarea>
+							</div>
+						</div>
+						<div class="row privacy-wrap">
+							<div class="form-row contact_privacy-row">
+								<label for="contact_privacy">I do not wish to receive future marketing materials from Marine Produce Australia.</label><input id="contact_privacy" name="privacy" type="checkbox" value="1">
+							</div>
+						</div>
+						<div class="row">
+							<div>
+								<button class="btn transition" id="contact_submit" name="submit" type="submit">Submit</button>
+							</div>
+						</div>
+					</form>
 	            </div>
 	            <div class="col-sm-4 recruitment">
 	            	<p>For all recruitment enquiries, please email: <a href="mailto:recruitment@marineproduce.com">recruitment@marineproduce.com</a></p>
