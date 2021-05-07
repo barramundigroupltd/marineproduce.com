@@ -1,0 +1,9 @@
+.progress-bar { transition-duration: 5s; width: 0; }
+.text-dark-navy { color: #133d6b; }
+.logo-mp { width: 180px; }
+.logo-bg { width: 120px; }
+
+@media (min-width: 576px) {
+    .logo-mp { width: 220px; }
+    .logo-bg { width: 160px; }
+}
